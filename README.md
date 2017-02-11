@@ -1,5 +1,19 @@
 # LSExample
 
+When Core module has AuthService listed in its providers array it's constituent components (HomeComponent & NavComponent) are no longer recognised.
+
+The VSCode extension gives the following error:
+[Angular] Component 'HomeComponent' is not included in a module and will not be available inside a template. Consider adding it to a NgModule declaration
+
+When these components are used in the root component AppComponent the following error occurs:
+[Angular]
+'app-home' is not a known element:
+1. If 'app-home' is an Angular component, then verify that it is part of this module.
+2. If 'app-home' is a Web Component then add "CUSTOM_ELEMENTS_SCHEMA" to the '@NgModule.schemas' of this component to suppress this message.
+
+However the application still runs correctly.
+
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.30.
 
 ## Development server
